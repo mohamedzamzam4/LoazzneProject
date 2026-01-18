@@ -1,0 +1,76 @@
+.hover-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+ 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.hover-card:hover img {
+  transform: scale(1.05);
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 180, 200, 0.85);
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: opacity 0.4s ease;
+}
+
+.hover-card:hover .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.overlay-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  
+  margin: 0;
+  max-width: 70%;
+}
+
+
+.round-button {
+  background-color: #ffdb4c;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+

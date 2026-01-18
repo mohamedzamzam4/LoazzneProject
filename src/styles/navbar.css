@@ -1,0 +1,148 @@
+
+.topbar-wrapper {
+  background-color: #f8f9fa;
+  padding: 5px 0;
+}
+
+
+.navbar-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  font-weight: 900;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #0dcaf0; 
+}
+
+.dropdown-menu.custom-dropdown {
+  background-color: #000;       
+  border: none;
+  min-width: 180px;
+  padding: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  border-radius: 0;
+  box-shadow: none;            
+}
+
+.nav-item.dropdown:hover .custom-dropdown {
+  display: block;
+}
+
+.dropdown-item {
+  color: #fff !important;       
+  background-color: #000;       
+  padding: 14px 24px;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #222;
+  transition: none;            
+}
+
+
+.dropdown-item:hover {
+  background-color:black !important;
+  color: #03d2fc !important;
+}
+
+
+.quote-btn {
+ background-color: #dcc325;
+  color: black;
+  border: none;
+ 
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border-radius: 0px;
+  font-size: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+
+  transform: translateY(50px);
+  opacity: 0;
+  transition: background-color 2.7s ease, color 2.7s ease;
+}
+.quote-btn:hover {
+  color: white;
+  background-color: #00bcd4;
+}
+
+
+.quote-btn2 {
+  background-color: #92ff04;
+  color: rgb(0, 0, 0);
+  border: none;
+ padding: 1rem 2rem;
+  font-weight: 700;
+   letter-spacing: 1.5px;
+ font-size: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.quote-btn2:hover {
+  background-color: #0bb4d4;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .dropdown-menu.custom-dropdown {
+    position: static;
+    box-shadow: none;
+  }
+
+  .nav-item.dropdown:hover .custom-dropdown {
+    display: none;
+  }
+
+  .nav-item.dropdown .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .5em;
+    content: "▼";
+    font-size: 0.7em;
+  }
+
+  .nav-item.dropdown .dropdown-toggle:focus + .custom-dropdown,
+  .nav-item.dropdown .dropdown-toggle:active + .custom-dropdown {
+    display: block;
+  }
+}

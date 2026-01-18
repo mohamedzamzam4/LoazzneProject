@@ -1,0 +1,23 @@
+
+.galerie-container {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+
+  flex-wrap: wrap;
+  
+}
+
+.galerie-image {
+  width: 281px;
+  height: 240px;
+  overflow: hidden;
+
+
+}
+
+.galerie-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

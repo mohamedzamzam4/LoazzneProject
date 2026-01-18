@@ -1,0 +1,38 @@
+.divcss {
+  background-color: #ffef8a;
+  height: 250px;
+  display: flex;
+  align-items: center;       
+  justify-content: center;    
+  gap: 50px;                  
+  padding: 0 2rem;
+  flex-wrap: wrap;    
+  top: 40px;        
+}
+
+.paragraph {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+}
+
+.quote-btne {
+
+  background-color: #000;
+  color: white;
+  border: none;
+  letter-spacing: 1.5px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border-radius: 0;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+.quote-btne:hover {
+  background-color: #00bcd4;
+  color: white;
+}

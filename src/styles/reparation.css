@@ -1,0 +1,62 @@
+.about_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh; 
+  
+  color: black;
+  gap: 70px;
+  padding: 40px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.about_image {
+  width: 550px;
+  height: 450px;
+  object-fit: cover;
+ 
+}
+
+.about_details {
+  max-width: 490px;
+}
+
+.hero-title-with-shape h4 {
+  color: black;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hero-title-with-shape h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: 200;
+}
+
+.hero-title-with-shape p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 48px;
+  color: gray;
+  line-height: 2;
+}
+
+.btn-yellow {
+ background-color: #dcc325;
+  color: black;
+  border: none;
+  letter-spacing: 1.5px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border-radius: 0px;
+  font-size: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-yellow:hover {
+  background-color: #09afe2;
+  color: white;
+}

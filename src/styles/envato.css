@@ -1,0 +1,31 @@
+
+.divimg {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 21px;
+  overflow: hidden; 
+}
+
+.img {
+  width: 200px;
+  height: 170px;
+  opacity: 0.5;
+  transition: opacity 0.3s ; 
+  animation: slideLeft 3s ease-in-out forwards;
+}
+
+.img:hover {
+  opacity: 1;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-40px);
+    opacity: 1;
+  }
+}
